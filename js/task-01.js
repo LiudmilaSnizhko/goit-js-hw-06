@@ -8,8 +8,7 @@ categories.forEach((category) => {
     console.log(`Category: ${text}`);
 
     const list = category.querySelectorAll("li");
-    // const element = list.length;
-
+    
     console.log(`Elements: ${list.length}`);
     
    });
