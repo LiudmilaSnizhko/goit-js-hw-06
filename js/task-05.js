@@ -2,11 +2,12 @@ const elements = {
     nameInput: document.querySelector('#name-input'),
    nameSpan: document.querySelector('#name-output')
 }
-elements.nameInput.addEventListener('nameInput', handlerSearch);
+elements.nameInput.addEventListener('input', handlerSearch);
 
 function handlerSearch(evt) {
-     nameSpan.textContent = evt.currentTarget.value.trim();
+     elements.nameSpan.textContent = evt.currentTarget.value.trim();
     if (evt.currentTarget.value.trim() === '') {
-        nameSpan.textContent = 'Anonymous';
-    } 
+        elements.nameSpan.textContent = 'Anonymous';
     }
+};
+
