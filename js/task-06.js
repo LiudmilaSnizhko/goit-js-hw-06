@@ -8,3 +8,4 @@ function handlerInput() {
         input.classList.remove('valid');
         input.classList.add('invalid');
     }};
+    
